@@ -1,0 +1,119 @@
+*{margin: 0px;
+padding: 0px;
+box-sizing: border-box;}
+
+.header{
+     background-color: darkred;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+
+.header img{
+     width: 200px; 
+     padding: 15px; 
+}
+
+.header ul{
+     list-style: none;
+     display: flex;
+}
+
+.header li, .footer a{
+     margin: 10px;
+}
+
+.header a, .footer a{
+     color: bisque;
+     text-decoration: none;
+     display: flex;
+}
+
+.header a:hover, .footer a:hover{
+     color: darkblue;
+     font-weight: bold;
+}
+
+.mainIndex{
+     box-sizing: content-box;
+     background-color:#355070;
+
+}
+
+main{
+     min-height: 80vh;
+}
+
+.tituloInicio{background-color: bisque;
+     font-style:italic ;}
+
+     .tituloInicio{
+          animation-duration: 3s;
+          animation-name: slidein;
+     }
+
+     @keyframes slidein {
+          from {
+          margin-left: 100%;
+          width: 300%
+          }
+
+          to {
+          margin-left: 0%;
+          width: 100%;
+          }
+     }
+
+
+
+
+.bannerUno{
+     margin: 15px;
+}
+
+.bannerDos{
+     margin: 15px;
+}
+
+.bannerTres{
+     margin: 15px;
+}
+.footer{background-color: darkred;}
+
+.footer ul{
+     display: flex;
+     list-style: none;
+     width: 450px;
+     margin: 0 auto;
+     justify-content: center;
+}
+
+.gridContainer{
+     max-width: 800px;
+     margin: 0 auto;
+     display: grid;
+     grid-template-columns: repeat(1,1fr);
+     align-items: center;
+     justify-items: center;
+     justify-content: center;
+     grid: row gap 150px; ;
+}
+
+.gridContainer img{
+     width: 850px;
+}
+
+@media (max-width:962px){
+     .header{
+          flex-direction: column;
+     }
+}
+
+@media (max-width:847px){
+     .gridContainer {grid-template-columns: repeat(1,1);}
+}
+
+/* css en pages nosotros */
+
+
+
